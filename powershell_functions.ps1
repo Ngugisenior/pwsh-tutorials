@@ -1,4 +1,4 @@
-function commit {
+function cmmit {
     Param
     (
          [Parameter(Mandatory=$true, Position=0)]
@@ -7,12 +7,12 @@ function commit {
          [string] $branch
     )
 
+    $message = $message + "" + (Get-Date)
     
     git add .
 
-    git commit -m $message+" "+(Get-Date)
+    git commit -m $message
 
     git push -u origin $branch
 
 }
-commit
