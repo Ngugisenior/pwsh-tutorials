@@ -7,12 +7,12 @@ function commit {
          [string] $branch
     )
 
-    $result = $message+" "+(Get-Date)
+    
     git add .
-    git commit -m $result
+    git commit -m $message+" "+(Get-Date)
 
     git push -u origin $branch
 
-    Write-Output $result
+    Write-Output $message+" "+(Get-Date)
     
 }
