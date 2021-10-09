@@ -7,16 +7,8 @@ function commit {
          [string] $branch
     )
 
-    if (!$message){
-        $message = "updates"
-    }
-    if (!$branch){
-        $branch = "master"
-    }
-
-
     git add .
-    git commit -m $message
+    git commit -m $message+ date
 
     git push -u origin $branch
     
