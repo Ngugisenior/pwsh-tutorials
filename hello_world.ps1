@@ -17,3 +17,6 @@ Write-Host "Hello "+ $env:USERNAME | Receive-Output
 git add .
 git commit -m 'updates'
 git push -u origin master
+
+""" Download Files (WGET) """
+Invoke-WebRequest -Uri https://ergast.com/api/f1/seasons.json -UseBasicParsing
