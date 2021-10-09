@@ -18,5 +18,5 @@ Write-Host "Hello "+ $env:USERNAME | Receive-Output
 """ Download Files (WGET) """
 Invoke-WebRequest -Uri https://ergast.com/api/f1/seasons.json -UseBasicParsing
 
-""" calls the commit function in gt.ps1 """
+""" calls the commit function in powershell_functions.ps1 """
 commit "updates" master
