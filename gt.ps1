@@ -9,10 +9,10 @@ function commit {
 
     
     git add .
+
     git commit -m $message+" "+(Get-Date)
 
     git push -u origin $branch
 
-    Write-Output $message+" "+(Get-Date)
-    
 }
+commit
