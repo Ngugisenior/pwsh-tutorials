@@ -13,3 +13,6 @@ function Receive-Output {
 Write-Output "Hello "+ $env:USERNAME | Receive-Output
 
 Write-Host "Hello "+ $env:USERNAME | Receive-Output
+
+git add .
+git commit -m 'updates'
