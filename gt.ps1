@@ -7,7 +7,7 @@ function commit {
          [string] $branch
     )
 
-    $result = $message+" "+(date)
+    $result = $message+"_"+(date)
     git add .
     git commit -m $result
 
