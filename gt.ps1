@@ -12,5 +12,7 @@ function commit {
     git commit -m $result
 
     git push -u origin $branch
+
+    Write-Output $result
     
 }
